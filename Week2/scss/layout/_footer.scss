@@ -1,0 +1,8 @@
+.footer{
+    a{
+        display: block;
+        &:hover{
+            color: $warning !important;
+        }
+    }
+}
