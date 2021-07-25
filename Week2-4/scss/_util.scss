@@ -1,0 +1,52 @@
+// util
+// container-wrap
+.container-wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+// bg-image
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+}
+
+// img-cover
+.img-cover {
+  object-fit: cover;
+}
+
+// width
+.w-mw-md-100 {
+  @include pad {
+    width: 100%;
+  }
+}
+
+// bottom-line hover animation
+.underline {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: $main;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  &:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+// font
+// .fw-300{
+//   font-weight: 300;
+// }
+// .fw-600{
+//   font-weight: 600;
+// }
