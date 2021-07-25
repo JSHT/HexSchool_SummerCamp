@@ -1,0 +1,7 @@
+.login__img {
+    height: 730px;
+    width: 730px;
+    @include pad{
+        height: 220px;
+    }
+}
